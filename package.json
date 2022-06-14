@@ -1,0 +1,21 @@
+{
+    "name": "adlin_resa",
+    "version": "1.0.0",
+    "description": "Reservation_salle_adlin",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "nodemon server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "cors": "^2.8.5",
+      "dotenv": "^16.0.1",
+      "express": "^4.18.1",
+      "mongodb": "^4.7.0",
+      "mongoose": "^6.3.8",
+      "nodemon": "^2.0.16"
+    }
+  }
+  
