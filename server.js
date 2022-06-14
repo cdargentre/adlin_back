@@ -31,7 +31,7 @@ app.listen(process.env.PORT, () => {
     console.log(`listening port ${process.env.PORT}`);  
 } )
 
-const db = require("./Models");
+const db = require("./Models"); 
 db.mongoose
   .connect(db.url, {
     useNewUrlParser: true,
