@@ -27,11 +27,17 @@ const meetingsRoute = require('./Routes/meetingRoute')
 app.use('/api/rooms',roomsRoute)
 app.use('/api/meetings',meetingsRoute)
 
-app.listen(process.env.PORT, () => {
-    console.log(`listening port ${process.env.PORT}`);  
-} )
+app.get('/', function (req, res) {
+    res.send('Hello World!')
+  })
+  
+var server = app.listen(process.env.PORT || 3000, function () {
+    var host = server.address().address
+    var port = server.address().port
+    console.log('App listening at http://%s:%s', host, port)
+  })
 
-const db = require("./Models"); 
+const db = require("./Models");
 db.mongoose
   .connect(db.url, {
     useNewUrlParser: true,
