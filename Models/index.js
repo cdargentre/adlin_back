@@ -5,4 +5,5 @@ const db = {};
 db.mongoose = mongoose;
 db.url = dbConfig.url;
 db.meetings = require("./MeetingModel.js")(mongoose);
+db.rooms = require("./RoomModel.js")(mongoose);
 module.exports = db;
