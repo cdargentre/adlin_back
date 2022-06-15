@@ -3,10 +3,8 @@ const router = express.Router()
 
 const MeetingController = require('../Controllers/meetingController')
 
-const csurf = require('csurf')
-const csrfProtection = csurf({ cookie: true });
 
-router.get('/', csrfProtection, MeetingController.findAllMeetings)
-router.post('/', csrfProtection, MeetingController.createMeeting)
+router.get('/', MeetingController.findAllMeetings)
+router.post('/', MeetingController.createMeeting)
 
 module.exports = router
