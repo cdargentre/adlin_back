@@ -29,7 +29,7 @@ const roomsRoute = require('./Routes/roomRoute')
 const meetingsRoute = require('./Routes/meetingRoute')
 
 app.use('/api/rooms',roomsRoute)
-app.use('/api/meetings',meetingsRoute)
+app.use('/api/meetings',meetingsRoute) 
 
   
 const server = app.listen(process.env.PORT || 3000, function () {
