@@ -7,7 +7,7 @@ require('dotenv').config({path: './config/.env'})
 const cors = require('cors')
 
 const corsOptions = {
-    origin: true,
+    origin: 'https://adlin-resa.netlify.app/',
     credentials: true,
     'allowedHeaders': ['sessionId', 'Content-Type', 'Authorization'],
     'exposedHeaders': ['sessionId'],
