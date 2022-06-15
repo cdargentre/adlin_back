@@ -9,6 +9,7 @@ const cors = require('cors')
 const corsOptions = {
     origin: [
     'https://adlin-resa.netlify.app',
+    'https://adlin-resa.netlify.app/',
     'http://localhost:3000',
   ],
   // origin: '*',
