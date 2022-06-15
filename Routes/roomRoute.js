@@ -1,12 +1,10 @@
 const express = require('express')
 const router = express.Router()
-const csrf = require('csurf')
-const csrfProtection = csrf({ cookie: true })
+const csurf = require('csurf')
+const csrfProtection = csurf({ cookie: true });
 
 const RoomController = require('../Controllers/roomController')
 
-router.get('/', RoomController.findAllRooms,  csrfProtection, function (req, res) {
-    res.render('send', { csrfToken: req.csrfToken() })
-  })
+router.get('/', csrfProtection,RoomController.findAllRooms)
 
 module.exports = router

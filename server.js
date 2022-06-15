@@ -26,7 +26,6 @@ app.use('/public', express.static(__dirname + '/public'))
 const cookieParser = require('cookie-parser')
 app.use(cookieParser())
 
-
 // ROUTES
 const roomsRoute = require('./Routes/roomRoute')
 const meetingsRoute = require('./Routes/meetingRoute')
