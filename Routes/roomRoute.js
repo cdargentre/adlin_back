@@ -5,6 +5,6 @@ const csrfProtection = csurf({ cookie: true });
 
 const RoomController = require('../Controllers/roomController')
 
-router.get('/', csrfProtection,RoomController.findAllRooms)
+router.get('/', RoomController.findAllRooms)
 
 module.exports = router
